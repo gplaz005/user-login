@@ -42,7 +42,7 @@ const LoginPage = () =>{
         setGotAccess(false)
         
         //console.log('Welcome Back ' + LoginResult.data.login.user.name)
-        setUserInfo('Welcome Back ' + LoginResult.data.login.user.name)
+            setUserInfo('Welcome Back ' + LoginResult.data.login.user.name)
         }catch(error){
             setWrongInfo('either password or user name are inorrect!')
             console.log("either password or user name are inorrect!")
@@ -67,7 +67,7 @@ const LoginPage = () =>{
 
     return(
 
-<div>
+    <div className = "container">
         {gotAccess ?
         
     <div>
@@ -75,7 +75,7 @@ const LoginPage = () =>{
         <div>
       <input value ={inputLoginEmail} placeholder ="Email" onChange = {e => setInputLoginEmail(e.target.value)}/>
       <input value ={inputLoginPassword} placeholder ="password" onChange = {e => setInputLoginPassword(e.target.value)}/>
-      <button  onClick = {setInput}> Log In </button>
+      <button className= "buttonStyle" onClick = {setInput}> Log In </button>
       {login}
         </div>
         {wrongInfo}

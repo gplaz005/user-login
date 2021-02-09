@@ -63,14 +63,18 @@ const CreateUser = () => {
 
   return (
     <div className="App">
-      
+        <div className = "container"> SOCIAL MEDIA APP</div>
+
+      <div className ="container">
       <input value ={inputEmail} placeholder ="Email" onChange = {e => setInputEmail(e.target.value)}/>
       <input value ={inputPassword} placeholder ="password" onChange = {e => setInputPassword(e.target.value)}/>
       <input value ={inputName} placeholder = "name" onChange = {e => setInputName(e.target.value)}/>
-      <button  onClick = {setInput}> enter </button>
+      <button className= "buttonStyle" onClick = {setInput}> Sign Up </button>
+      </div>
 
       <div>
-          <button onClick ={goTOLogin}>Login Page</button>
+          Have an acount Already?  
+          <button className= "buttonStyle" onClick ={goTOLogin}>Login Page</button>
       </div>
       
       <div>
