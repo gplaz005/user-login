@@ -1,3 +1,31 @@
+
+React- Prisma2 - GraphQL - PostgreSQL
+
+How to run it on your local machine:
+1. git clone https://github.com/gplaz005/user-login
+2. install dependencies with npm install or yarn install
+	you may need to npm install inside the server folder as well
+	(npm install prisma --save-dev)
+3. create a new database on PostgreSQL
+4. create a new .env file inside the Prisma folder and inlude the following:
+DATABASE_URL = 'postgresql://johndoe:randompassword@localhost:5432/mydb?schema=public'
+replace the fields depending on your new PostgreSQL Database.
+5. inside your Prisma folder run: npx prisma migrate dev --name init --preview-feature
+this will create the migration from your code to the new Database
+(if migration folder was already created rename it and run the script again)
+6.run pm install @prisma/client
+
+
+
+Run Server and App
+to start Server go to server folder and run: npm run dev or yarn dev
+open your browser and test the server on http://localhost:4000.
+to run app go to root folder and run: npm start.
+open your browser and use the app on http://localhost:3000.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
