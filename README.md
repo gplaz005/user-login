@@ -18,7 +18,7 @@ this will create the migration from your code to the new Database
 
 
 # Run Server and App
-to start Server go to server folder and run: npm run dev or yarn dev
+to start Server go to server folder and run: npm run dev or yarn dev,
 open your browser and test the server on http://localhost:4000.
 to run app go to root folder and run: npm start.
 open your browser and use the app on http://localhost:3000.
