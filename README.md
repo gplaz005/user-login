@@ -1,7 +1,7 @@
 
 ## React- Prisma2 - GraphQL - PostgreSQL
 
-How to run it on your local machine:
+How to run on your local machine:
 1. git clone https://github.com/gplaz005/user-login
 2. install dependencies with npm install or yarn install
 	you may need to npm install inside the server folder as well
